@@ -1,4 +1,5 @@
 using Plots
+using PolynomialRoots
 plotlyjs()
 
 function fourthOrderRealRoots(a, b, c, d, e)
