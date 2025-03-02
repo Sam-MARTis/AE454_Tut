@@ -34,6 +34,6 @@ for (i, h) in enumerate(hVals)
 end
 
 
-heatmap(hVals, rVals, zVals, xlabel="h", ylabel="r", zlabel="Roots", title="Bifurcation Curve", interpolation=:linear)
+heatmap(hVals, rVals, zVals, xlabel="h", ylabel="r", zlabel="Roots", title="Bifurcation Curve", interpolation=:linear, size=(1000, 1000))
 
-savefig("Bifurcation-Curve.html")
+savefig("./Bifurcation-Curve.html")

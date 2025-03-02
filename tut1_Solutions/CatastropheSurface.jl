@@ -1,4 +1,5 @@
 using Plots
+using PolynomialRoots
 plotlyjs()
 
 function fourthOrderRealRoots(a, b, c, d, e)
@@ -41,5 +42,5 @@ for h in hVals
     end
 end
 
-scatter3d(xVals, yVals, zVals, xlabel="h", ylabel="r", zlabel="Roots", title="Catastrophe Surface", markersize=0.05)
-savefig("Catastrophe-Surface.html")
+scatter3d(xVals, yVals, zVals, xlabel="h", ylabel="r", zlabel="Roots", title="Catastrophe Surface", markersize=0.05, size = (1000, 1000))
+savefig("./Catastrophe-Surface.html")
